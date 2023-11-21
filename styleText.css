@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.flex-container p:first-child {
+  padding-top: 30px;
+}

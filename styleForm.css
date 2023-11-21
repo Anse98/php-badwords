@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.text p {
+  padding-bottom: 20px;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
+input {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  background-color: antiquewhite;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+textarea {
+  margin-left: 20px;
+  background-color: antiquewhite;
+}

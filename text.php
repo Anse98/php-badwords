@@ -5,7 +5,13 @@ $text = 'Questa modalità è ambientata nella distopica città di Urzikstan. Un 
 Riconoscere le zone più pericolose è fondamentale per la sopravvivenza. Come potete vedere dalla mappa di Urzikstan qui sotto, sono tre i livelli di pericolosità in cui incapperete, che influenzeranno sulla difficoltà delle missioni.';
 
 
-$user_name = $_POST["bad_word"];
+$bad_word = $_POST["bad_word"];
+
+$chosen_text = $_POST["chosen_text"];
+
+var_dump($chosen_text);
+
+var_dump($bad_word);
 
 ?>
 
@@ -16,13 +22,16 @@ $user_name = $_POST["bad_word"];
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bad Words Text</title>
+  <link rel="stylesheet" href="styleText.css">
 </head>
 
 <body>
-  <p><?php echo $text; ?></p>
-  <p>Il testo è lungo <?php echo strlen($text); ?> caratteri</p>
-  <p><?php echo str_replace($user_name, '***', $text); ?></p>
-  <p>La lunghezza del nuovo paragrafo è di <?php echo strlen(str_replace($user_name, '***', $text)); ?> caratteri</p>
+  <div class="flex-container">
+    <p><?php echo $text; ?></p>
+    <p>Il testo è lungo <?php echo strlen($text); ?> caratteri</p>
+    <p><?php echo str_replace($bad_word, '***', $chosen_text); ?></p>
+    <p>La lunghezza del nuovo paragrafo è di <?php echo strlen(str_replace($bad_word, '***', $text)); ?> caratteri</p>
+  </div>
 </body>
 
 </html>
