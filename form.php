@@ -15,10 +15,11 @@
       Riconoscere le zone più pericolose è fondamentale per la sopravvivenza. Come potete vedere dalla mappa di Urzikstan qui sotto, sono tre i livelli di pericolosità in cui incapperete, che influenzeranno sulla difficoltà delle missioni.</p>
   </div>
 
-  <h3 class="title">Scegli la parola da censurare:</h3>
-  <form action="text.php" method="post">
+  <h3 class="title">Scegli la parola da censurare</h3>
+  <form action="index.php" method="post">
     <input type="text" name="bad_word">
-    <div>
+    <div class="title-area">
+      <h3>Inserisci la parte di testo dove vuoi censurare la parola inserita</h3>
       <textarea name="chosen_text" rows="8" cols="50"></textarea>
     </div>
     <input type="submit" value="Submit">
